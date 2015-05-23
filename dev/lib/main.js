@@ -13,9 +13,11 @@ var menuItem = contextMenu.Item({
 });
 
 
+//blocker module
+var Blocker = require("./blocker.js").construct();
 var runScript = function (tab) {
 	tab.attach({
-		contentScript: self.data.url("myscript.js")
+		contentScript: Blocker.log()
 	});
 }
 require("sdk/tabs").on("ready", runScript);
