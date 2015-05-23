@@ -12,7 +12,6 @@ var menuItem = contextMenu.Item({
 	}
 });
 
-
 //blocker module
 var Blocker = require("./blocker.js").construct();
 var runScript = function (tab) {

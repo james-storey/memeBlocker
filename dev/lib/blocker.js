@@ -7,5 +7,4 @@ var Blocker = function () {
     return that;
 }
 
-
 exports.construct = Blocker;
